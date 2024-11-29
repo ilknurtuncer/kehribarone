@@ -6,6 +6,7 @@ import ProductDetail from './pages/ProductDetail';
 import Home from './pages/Home.JSX';
 
 
+
 const App = () => {
   return (
     <Router>
