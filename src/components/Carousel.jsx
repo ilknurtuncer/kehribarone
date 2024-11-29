@@ -2,10 +2,19 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import carouselData from '../data/carouselData';
+import { Autoplay } from 'swiper';
 
 const Carousel = () => {
   return (
-    <Swiper loop autoplay={{ delay: 3000 }} navigation>
+    <Swiper
+      loop
+      autoplay={{
+        delay: 3000,  // Her 3 saniyede bir geçiş yapacak
+        disableOnInteraction: false,  // Kullanıcı etkileşimi sonrası durmasını engeller
+      }}
+      navigation
+      modules={[Autoplay]}  // Autoplay modülünü dahil etmelisiniz
+    >
       {carouselData.map((slide) => (
         <SwiperSlide key={slide.id}>
           <div className="relative">
