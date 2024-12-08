@@ -4,7 +4,7 @@ import ProductList from '../components/ProductList';
 
 const Home = () => {
   return (
-    <div className="relative bg-orange-100 top-4">
+    <div className="relative bg-orange-100 top-2">
       <Carousel />
       <ProductList />
     </div>
