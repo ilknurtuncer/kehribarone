@@ -1,9 +1,28 @@
 {
-    "navbar": {
-      "home": "Home",
-      "products": "Products",
-      "about": "About",
-      "contact": "Contact"
-    }
+  "carousel": {
+    "title1": "Amber Elegance",
+    "subtitle1": "Discover the beauty of natural amber",
+    "title2": "Timeless Design",
+    "subtitle2": "Jewelry crafted with passion",
+    "title3": "Exclusive Collection",
+    "subtitle3": "Unique pieces for every occasion"
+  },
+  "navbar": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "productCard": {
+    "details": "View Details"
+  },
+  "productDetail": {
+    "notFound": "Product not found."
+  },
+  "productList": {
+    "title": "Our Products"
+  },
+  "footer": {
+    "copyright": "All rights reserved."
   }
-  
+}

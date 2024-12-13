@@ -1,9 +1,31 @@
 {
-    "navbar": {
-      "home": "Strona Główna",
-      "products": "Produkty",
-      "about": "O nas",
-      "contact": "Kontakt"
-    }
+  "carousel": {
+    "title1": "Naturalna biżuteria z bursztynu",
+    "subtitle1": "Najlepsze produkty z bursztynu są tutaj!",
+    "title2": "Komplement elegancji",
+    "subtitle2": "Wzory na każdy gust.",
+    "title3": "Bursztynowe prezenty",
+    "subtitle3": "Wyjątkowe prezenty dla bliskich."
+  },
+  "navbar": {
+    "home": "Strona główna",
+    "products": "Produkty",
+    "about": "O nas",
+    "contact": "Kontakt"
+  },
+  "productCard": {
+    "details": "Zobacz szczegóły",
+    "description": "Opis produktu"
+  },
+  "productDetail": {
+    "notFound": "Produkt nie znaleziony.",
+    "description": "Opis produktu",
+    "price": "Cena"
+  },
+  "productList": {
+    "title": "Nasze produkty"
+  },
+  "footer": {
+    "copyright": "Wszystkie prawa zastrzeżone."
   }
-  
+}

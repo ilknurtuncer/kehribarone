@@ -1,8 +1,9 @@
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}", // Projedeki tüm dosyalar
   ],
-  plugins: [
-    // flowbite'ı kaldırın
-  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
 };

@@ -1,26 +1,25 @@
 const productData = [
-    {
-      id: 1,
-      name: 'Kehribar Kolye',
-      description: 'Doğal kehribar taşından yapılmış zarif bir kolye.',
-      price: '500₺',
-      image: '/images/kolye1.jpg',
-    },
-    {
-      id: 2,
-      name: 'Kehribar Bileklik',
-      description: 'El yapımı kehribar taşlı bileklik.',
-      price: '300₺',
-      image: '/images/bileklik1.jpg',
-    },
-    {
-      id: 3,
-      name: 'Kehribar Yüzük',
-      description: 'Özel tasarım kehribar taşlı yüzük.',
-      price: '400₺',
-      image: '/images/yuzuk1.jpg',
-    },
-  ];
-  
-  export default productData;
-  
+  {
+    id: 1,
+    name: "Amber Necklace",
+    description: "Beautiful handmade amber necklace.",
+    price: "$120",
+    image: "kolye1.jpg", // Sadece dosya adı
+  },
+  {
+    id: 2,
+    name: "Amber Bracelet",
+    description: "Elegant amber bracelet for every occasion.",
+    price: "$80",
+    image: "bileklik1.jpg",
+  },
+  {
+    id: 3,
+    name: "Amber Earrings",
+    description: "Stylish amber earrings.",
+    price: "$60",
+    image: "yuzuk1.jpg",
+  },
+];
+
+export default productData;

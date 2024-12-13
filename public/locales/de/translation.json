@@ -1,9 +1,30 @@
-{
+{"carousel": {
+    "title1": "Bernstein Eleganz",
+    "subtitle1": "Entdecken Sie die Schönheit von natürlichem Bernstein",
+    "title2": "Zeitloses Design",
+    "subtitle2": "Mit Leidenschaft gefertigte Schmuckstücke",
+    "title3": "Exklusive Kollektion",
+    "subtitle3": "Einzigartige Stücke für jeden Anlass"
+  },
     "navbar": {
       "home": "Startseite",
       "products": "Produkte",
       "about": "Über uns",
       "contact": "Kontakt"
+    },
+    "productCard": {
+       "details": "Details anzeigen",
+    "description": "Beschreibung"
+    },
+    "productDetail": {
+      "notFound": "Produkt nicht gefunden.",
+      "description": "Produktbeschreibung",
+      "price": "Preis"
+    },
+    "productList": {
+      "title": "Unsere Produkte"
+    },
+    "footer": {
+      "copyright": "Alle Rechte vorbehalten."
     }
   }
-  

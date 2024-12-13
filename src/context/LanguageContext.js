@@ -1,28 +1,37 @@
-import React, { createContext, useState, useContext } from "react";
-
-// Dillerin verileri
-const languageData = {
-  en: { home: "Home", about: "About", contact: "Contact" },
-  de: { home: "Startseite", about: "Über uns", contact: "Kontakt" },
-  pl: { home: "Strona główna", about: "O nas", contact: "Kontakt" }
-};
+import React, { createContext, useContext, useState, useEffect } from "react";
 
 const LanguageContext = createContext();
 
-export const useLanguage = () => {
-  return useContext(LanguageContext);
-};
-
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState("en"); // Varsayılan dil
+  const [translations, setTranslations] = useState({});
 
-  const switchLanguage = (lang) => {
-    setLanguage(lang);
+  const loadTranslations = async (lang) => {
+    try {
+      const response = await fetch(`/locales/${lang}/translation.json`);
+      const data = await response.json();
+      setTranslations(data);
+    } catch (error) {
+      console.error("Translation file loading failed:", error);
+    }
   };
 
+  const switchLanguage = async (lang) => {
+    setLanguage(lang);
+    setTranslations({}); // Eski çevirileri temizle (isteğe bağlı)
+    await loadTranslations(lang);
+  };
+  
+
+  useEffect(() => {
+    loadTranslations(language);
+  }, [language]);
+
   return (
-    <LanguageContext.Provider value={{ language, switchLanguage, languageData }}>
+    <LanguageContext.Provider value={{ language, translations, switchLanguage }}>
       {children}
     </LanguageContext.Provider>
   );
 };
+
+export const useLanguageContext = () => useContext(LanguageContext);
