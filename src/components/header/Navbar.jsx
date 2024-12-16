@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next"; // useTranslation import edildi
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // FontAwesomeIcon import edildi
+import { faPhone, faLocationDot } from "@fortawesome/free-solid-svg-icons"; // Gerekli ikonlar import edildi
 import productData from "../../data/productData";
 
 const Navbar = () => {
@@ -91,10 +93,16 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            <Link to="/about" className="text-gray-700 text-xl hover:text-blue-500">
+            <Link
+              to="/about"
+              className="text-gray-700 text-xl hover:text-blue-500"
+            >
               {t("navbar.about")}
             </Link>
-            <Link to="/contact" className="text-gray-700 text-xl hover:text-blue-500">
+            <Link
+              to="/contact"
+              className="text-gray-700 text-xl hover:text-blue-500"
+            >
               {t("navbar.contact")}
             </Link>
           </div>
@@ -125,16 +133,16 @@ const Navbar = () => {
 
           {/* Telefon ve Adres */}
           <div className="hidden md:flex flex-col text-gray-700 text-lg font-semibold">
-            <a href="tel:+123456789" className="hover:text-blue-600">
-              📞 +123 456 789
+            <a href="tel:+123456789" className="hover:text-blue-600 flex items-center">
+              <FontAwesomeIcon icon={faPhone} className="mr-2" /> +123 456 789
             </a>
             <a
               href="https://www.google.com/maps?q=Your+Address"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-blue-600"
+              className="hover:text-blue-600 flex items-center"
             >
-              🏠 Your Address
+              <FontAwesomeIcon icon={faLocationDot} className="mr-2" /> Your Address
             </a>
           </div>
         </div>
@@ -144,3 +152,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+

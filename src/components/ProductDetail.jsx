@@ -18,7 +18,7 @@ function ProductDetail() {
   return (
     <div className="p-4 flex flex-col md:flex-row gap-8">
       <img
-        src={`/images/products/${product.image}`} // Resim yolunu dinamik oluştur
+        src={`/images/products/${product.image}`} 
         alt={product.name}
         className="w-full max-w-md rounded-lg shadow-md"
       />
