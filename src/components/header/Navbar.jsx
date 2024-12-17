@@ -109,6 +109,25 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center space-x-6">
+          {/* Telefon ve Adres */}
+          <div className="flex items-center space-x-6">
+            <a
+              href="tel:+123456789"
+              className="text-gray-700 text-lg font-semibold hover:text-blue-600 flex items-center"
+            >
+              <FontAwesomeIcon icon={faPhone} className="mr-2" /> +123 456 789
+            </a>
+            <a
+              href="https://www.google.com/maps?q=Your+Address"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-700 text-lg font-semibold hover:text-blue-600 flex items-center"
+            >
+              <FontAwesomeIcon icon={faLocationDot} className="mr-2" /> Your Address
+            </a>
+          </div>
+
+          {/* Dil Seçeneği */}
           <div className="relative">
             <button
               onClick={() => toggleDropdown("language")}
@@ -130,21 +149,6 @@ const Navbar = () => {
               </div>
             )}
           </div>
-
-          {/* Telefon ve Adres */}
-          <div className="hidden md:flex flex-col text-gray-700 text-lg font-semibold">
-            <a href="tel:+123456789" className="hover:text-blue-600 flex items-center">
-              <FontAwesomeIcon icon={faPhone} className="mr-2" /> +123 456 789
-            </a>
-            <a
-              href="https://www.google.com/maps?q=Your+Address"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-600 flex items-center"
-            >
-              <FontAwesomeIcon icon={faLocationDot} className="mr-2" /> Your Address
-            </a>
-          </div>
         </div>
       </div>
     </nav>
@@ -152,5 +156,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
