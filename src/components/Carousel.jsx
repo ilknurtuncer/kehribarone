@@ -38,6 +38,7 @@ const Carousel = () => {
       }}
       navigation={true}
       modules={[Autoplay, Navigation]}
+      
     >
       {slides.map((slide) => (
         <SwiperSlide key={slide.id}>
