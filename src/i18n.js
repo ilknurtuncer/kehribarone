@@ -9,10 +9,10 @@ i18n
   .use(initReactI18next)
   .init({
     backend: {
-      loadPath: "/locales/{{lng}}/translation.json", // public klasöründeki yolu belirtiyoruz
+      loadPath: "/locales/{{lng}}/translation.json", // public klasöründeki yolu 
     },
-    fallbackLng: "en", // Dile ulaşılamazsa varsayılan olarak İngilizce
-    debug: true, // Geliştirme sırasında hata ayıklama için
+    fallbackLng: "en", //  varsayılan olarak İngilizce
+    debug: true, // Geliştirme sırasında hata ayıklama 
     interpolation: {
       escapeValue: false, // React zaten XSS koruması sağlıyor
     },
