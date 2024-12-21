@@ -73,26 +73,27 @@ const Navbar = () => {
               {t("navbar.home")}
             </Link>
             <div className="relative" ref={dropdownRefs.products}>
-              <button
-                onClick={() => toggleDropdown("products")}
-                className="text-gray-700 text-xl hover:text-blue-500"
-              >
-                {t("navbar.products")}
-              </button>
-              {dropdownState.products && (
-                <div className="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg">
-                  {productData.map((product) => (
-                    <Link
-                      key={product.id}
-                      to={`/products/${product.id}`}
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
-                    >
-                      {product.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
+  <button
+    onClick={() => toggleDropdown("products")}
+    className="text-gray-700 text-xl hover:text-blue-500"
+  >
+    {t("navbar.products")}
+  </button>
+  {dropdownState.products && (
+    <div className="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg">
+      {productData.map((product) => (
+        <Link
+          key={product.id}
+          to={`/products/${product.id}`}
+          className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+        >
+          {product.name[i18n.language] || product.name.en} //* seçilen dile göre ürün adı
+        </Link>
+      ))}
+    </div>
+  )}
+</div>
+
             <Link
               to="/about"
               className="text-gray-700 text-xl hover:text-blue-500"

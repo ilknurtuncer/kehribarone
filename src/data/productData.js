@@ -20,8 +20,8 @@ const productData = [
     }
   },
   {
-    id: 1,
-    image: "bileklik1.jpg",
+    id: 2,
+    image: "bileklik2.jpg",
     name: {
       en: "Amber Bracelet",
       pl: "Naszyjnik z bursztynu",
@@ -39,7 +39,7 @@ const productData = [
     }
   },
   {
-    id: 1,
+    id: 3,
     image: "yuzuk1.jpg",
     name: {
       en: "Amber Earrings",
@@ -58,7 +58,7 @@ const productData = [
     }
   },
   {
-    "id": 2,
+    "id": 4,
     "image": "tesbih2.jpg",
     "name": {
       "en": "Amber Prayer Beads",
@@ -74,6 +74,25 @@ const productData = [
       "en": "$120",
       "pl": "120 zł",
       "de": "120 €"
+    }
+  },
+  {
+    "id": 5,
+    "image": "bileklik1.jpg",
+    "name": {
+      "en": "Amber Prayer Beads",
+      "pl": "Bursztynowe koraliki modlitewne",
+      "de": "Bernstein Gebetskette"
+    },
+    "description": {
+      "en": "Beautiful amber prayer beads, perfect for meditation.",
+      "pl": "Piękne bursztynowe koraliki modlitewne, idealne do medytacji.",
+      "de": "Schöne Bernstein Gebetskette, perfekt für die Meditation."
+    },
+    "price": {
+      "en": "$150",
+      "pl": "150 zł",
+      "de": "150 €"
     }
   }
   
