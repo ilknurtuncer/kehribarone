@@ -57,7 +57,7 @@ const AboutKehribar = () => {
           </li>
           <li className="flex items-center text-lg text-gray-800">
             <FaCheckCircle className="text-yellow-600 mr-3" />
-            Doğal bir ağrı kesici olarak kullanılabilir.
+            {t("aboutAmber.benefit5")}
           </li>
         </ul>
       </div>

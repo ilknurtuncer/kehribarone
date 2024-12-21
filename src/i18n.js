@@ -22,4 +22,9 @@ i18n
     },
   });
 
+
+// Konsolda dilin yüklendiğini ve geçerli dilin ne olduğunu görmek için
+console.log('Current Language:', i18n.language); // Yüklenen dil
+console.log('Loaded languages:', i18n.languages); // Yüklenen dillerin listesi
+
 export default i18n;
