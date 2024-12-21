@@ -10,6 +10,9 @@ const AboutKehribar = () => {
   const handleYoutubeClick = () => {
     // Redirect to YouTube
     window.open("https://www.youtube.com/results?search_query=amber+benefits", "_blank");
+
+    // navigate("/some-path"); // navigate i kullanmak istediğimde yönlendirilmek istenen yol
+
   };
 
   return (
@@ -33,6 +36,9 @@ const AboutKehribar = () => {
           />
         </button>
       </div>
+       {/* //*------------------------------------------------------------------
+      <button onClick={handleButtonClick}>Go to Some Path</button> //* navigate i kullanmak istediğimde kullanılacak
+       //*--------------------------------- */}
 
       {/* Right side - About heading and amber's benefits */}
       <div className="w-full md:w-1/2 text-center md:text-left">
