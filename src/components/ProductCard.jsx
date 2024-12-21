@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useLanguageContext } from "../context/LanguageContext";
+import { useTranslation } from "react-i18next"; // useTranslation hook'u ile çeviri alıyoruz
 
 const ProductCard = ({ product }) => {
-  const { translations } = useLanguageContext(); // Translations context'ini kullan
-console.log(translations);
+  const { t } = useTranslation(); // Çevirileri almak için hook
+
   return (
     <div className="border border-inherit border-orange-200 rounded shadow-md p-8 m-8">
       <img
@@ -13,12 +13,10 @@ console.log(translations);
         className="w-full h-56 object-cover"
       />
       <h3 className="text-xl font-bold mt-2">{product.name}</h3>
-      <p className="text-gray-700">
-        {translations.productCard?.description || product.description}
-      </p>
+      <p className="text-gray-700">{product.description}</p>
       <p className="text-yellow-600 font-bold">{product.price}</p>
       <Link to={`/products/${product.id}`} className="text-blue-500 hover:underline">
-        {translations.productCard?.details || "View Details"}
+        {t("productCard.details")} {/* Çeviri anahtarı*/}
       </Link>
     </div>
   );

@@ -13,10 +13,10 @@
     "about": "About",
     "contact": "Contact"
   },
-  "productCard": {
-    "details": "View Details"
-  },
   "productDetail": {
+    "name": "Product Name",
+    "description": "Product Description",
+    "price": "Price",
     "notFound": "Product not found."
   },
   "productList": {
@@ -24,5 +24,61 @@
   },
   "footer": {
     "copyright": "All rights reserved."
+  },
+  "contact": {
+    "title": "Let us know how we can help",
+    "subtitle": "We’re here to help and answer any question you might have. We look forward to hearing from you! Please fill out the form, or use the contact information below.",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "company": "Company",
+      "message": "Message",
+      "submit": "Submit"
+    }
+  },
+  "about": {
+    "title": "About Amber",
+    "sections": {
+      "whatIsAmber": {
+        "title": "What is Amber?",
+        "content": "Amber is a natural gemstone believed to enhance health and mental balance. It has been valued for centuries, both in jewelry and in natural medicine."
+      },
+      "history": {
+        "title": "History of Amber",
+        "content": "Amber has been used by ancient civilizations. Its beauty and health benefits were appreciated by the Egyptians, Greeks, and Romans."
+      },
+      "features": {
+        "title": "Features of Amber",
+        "content": [
+          "It is a natural organic product.",
+          "It comes in various colors, from golden to green.",
+          "It has therapeutic properties, particularly in pain relief.",
+          "It is an excellent material for making jewelry.",
+          "Its warmth has a calming effect."
+        ]
+      },
+      "uses": {
+        "title": "Uses of Amber",
+        "content": "Amber is used in jewelry, cosmetics, and to treat various ailments such as stress, joint pain, and skin issues."
+      },
+      "benefits": {
+        "title": "Benefits of Amber",
+        "content": "Amber has many health benefits, such as reducing stress, boosting energy, strengthening the immune system, improving skin health, and acting as a natural pain reliever."
+      },
+      "aboutUs": {
+        "title": "About Us",
+        "content": "We are passionate about amber and its applications. Our products are made from the highest quality amber, which helps improve health and well-being."
+      }
+    }
+  },
+  "aboutAmber": {
+    "title": "About Amber",
+    "description": "Amber is a gemstone valued for its therapeutic and aesthetic properties. Here are some of its most important benefits:",
+    "imageAlt": "Amber image",
+    "benefit1": "Helps reduce stress.",
+    "benefit2": "Provides energy to the body.",
+    "benefit3": "Strengthens the immune system.",
+    "benefit4": "Can be used as a natural pain reliever.",
+    "benefit5": "Improves skin health."
   }
 }

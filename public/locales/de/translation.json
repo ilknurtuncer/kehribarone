@@ -1,30 +1,84 @@
-{"carousel": {
+{
+  "carousel": {
     "title1": "Bernstein Eleganz",
     "subtitle1": "Entdecken Sie die Schönheit von natürlichem Bernstein",
     "title2": "Zeitloses Design",
-    "subtitle2": "Mit Leidenschaft gefertigte Schmuckstücke",
+    "subtitle2": "Schmuck, der mit Leidenschaft gefertigt wird",
     "title3": "Exklusive Kollektion",
-    "subtitle3": "Einzigartige Stücke für jeden Anlass"
+    "subtitle3": "Einzigartige Stücke für jede Gelegenheit"
   },
-    "navbar": {
-      "home": "Startseite",
-      "products": "Produkte",
-      "about": "Über uns",
-      "contact": "Kontakt"
-    },
-    "productCard": {
-       "details": "Details anzeigen",
-    "description": "Beschreibung"
-    },
-    "productDetail": {
-      "notFound": "Produkt nicht gefunden.",
-      "description": "Produktbeschreibung",
-      "price": "Preis"
-    },
-    "productList": {
-      "title": "Unsere Produkte"
-    },
-    "footer": {
-      "copyright": "Alle Rechte vorbehalten."
+  "navbar": {
+    "home": "Startseite",
+    "products": "Produkte",
+    "about": "Über uns",
+    "contact": "Kontakt"
+  },
+  "productDetail": {
+    "name": "Produktname",
+    "description": "Produktbeschreibung",
+    "price": "Preis",
+    "notFound": "Produkt nicht gefunden."
+  },
+  "productList": {
+    "title": "Unsere Produkte"
+  },
+  "footer": {
+    "copyright": "Alle Rechte vorbehalten."
+  },
+  "contact": {
+    "title": "Lassen Sie uns wissen, wie wir Ihnen helfen können",
+    "subtitle": "Wir sind hier, um zu helfen und jede Frage zu beantworten, die Sie haben könnten. Wir freuen uns auf Ihre Nachricht! Bitte füllen Sie das Formular aus oder nutzen Sie die unten stehenden Kontaktinformationen.",
+    "form": {
+      "name": "Vollständiger Name",
+      "email": "E-Mail",
+      "company": "Firma",
+      "message": "Nachricht",
+      "submit": "Absenden"
     }
+  },
+  "about": {
+    "title": "Über Bernstein",
+    "sections": {
+      "whatIsAmber": {
+        "title": "Was ist Bernstein?",
+        "content": "Bernstein ist ein natürlicher Edelstein, der das Wohlbefinden und das geistige Gleichgewicht fördern soll. Er wird seit Jahrhunderten geschätzt, sowohl in Schmuckstücken als auch in der Naturmedizin."
+      },
+      "history": {
+        "title": "Die Geschichte des Bernsteins",
+        "content": "Bernstein wurde von alten Zivilisationen genutzt. Seine Schönheit und gesundheitlichen Vorteile wurden von den Ägyptern, Griechen und Römern geschätzt."
+      },
+      "features": {
+        "title": "Merkmale des Bernsteins",
+        "content": [
+          "Es ist ein natürliches organisches Produkt.",
+          "Es gibt Bernstein in verschiedenen Farben, von gold bis grün.",
+          "Es hat therapeutische Eigenschaften, insbesondere bei Schmerzlinderung.",
+          "Es ist ein ausgezeichnetes Material für die Schmuckherstellung.",
+          "Seine Wärme hat eine beruhigende Wirkung."
+        ]
+      },
+      "uses": {
+        "title": "Verwendungen von Bernstein",
+        "content": "Bernstein wird in Schmuckstücken, Kosmetika und zur Behandlung verschiedener Beschwerden wie Stress, Gelenkschmerzen und Hautproblemen verwendet."
+      },
+      "benefits": {
+        "title": "Vorteile von Bernstein",
+        "content": "Bernstein hat viele gesundheitliche Vorteile, wie die Reduzierung von Stress, die Steigerung der Energie, die Stärkung des Immunsystems, die Verbesserung der Hautgesundheit und die Verwendung als natürliches Schmerzmittel."
+      },
+      "aboutUs": {
+        "title": "Über uns",
+        "content": "Wir sind leidenschaftlich über Bernstein und seine Anwendungen. Unsere Produkte bestehen aus hochwertigem Bernstein, der hilft, die Gesundheit und das Wohlbefinden zu verbessern."
+      }
+    }
+  },
+  "aboutAmber": {
+    "title": "Über Bernstein",
+    "description": "Bernstein ist ein Edelstein, der für seine therapeutischen und ästhetischen Eigenschaften geschätzt wird. Hier sind einige seiner wichtigsten Vorteile:",
+    "imageAlt": "Bernstein Bild",
+    "benefit1": "Hilft, Stress abzubauen.",
+    "benefit2": "Gibt dem Körper Energie.",
+    "benefit3": "Stärkt das Immunsystem.",
+    "benefit4": "Kann als natürliches Schmerzmittel verwendet werden.",
+    "benefit5": "Verbessert die Hautgesundheit."
   }
+}

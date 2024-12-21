@@ -1,8 +1,5 @@
-
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import ProductCard from './components/ProductCard';
-
 import Navbar from "./components/header/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -12,15 +9,11 @@ import Contact from "./components/Contact";
 import Kolye from "./components/products/Kolye";
 import Bileklik from "./components/products/Bileklik";
 import Tesbih from "./components/products/Tesbih";
-import { useTranslation } from 'react-i18next';
-import { TranslationProvider } from './context/TranslationContext';
-
+import { LanguageProvider } from './context/LanguageContext'; // LanguageProvider'ı burada sarmalıyoruz
 
 const App = () => {
-  const { t } = useTranslation();
   return (
-    <TranslationProvider>
-
+    <LanguageProvider>
       <Router>
         <Navbar />
         <div className="mt-16">
@@ -34,10 +27,9 @@ const App = () => {
             <Route path="/tesbih" element={<Tesbih />} />
           </Routes>
         </div>
-        {/* <ProductCard /> */}
         <Footer />
       </Router>
-      </TranslationProvider>
+    </LanguageProvider>
   );
 };
 

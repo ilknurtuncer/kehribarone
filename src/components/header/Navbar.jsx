@@ -136,22 +136,22 @@ const Navbar = () => {
               <img
                 src={`/images/flags/${i18n.language}.png`} // Dilin bayrağını yükle
                 alt={i18n.language}
-                className="w-6 h-4 mr-2 "
+                className="w-6 h-4 mr-2"
               />
               {i18n.language.toUpperCase()}
             </button>
             {dropdownState.language && (
-              <div className="absolute right-0 mt-2 w-48  border rounded shadow-lg">
+              <div className="absolute right-0 mt-2 w-48 bg-white border rounded shadow-lg">
                 {["en", "de", "pl"].map((lang) => (
                   <div
                     key={lang}
-                    className=" flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200"
+                    className="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200"
                     onClick={() => switchLanguage(lang)}
                   >
                     <img
                       src={`/images/flags/${lang}.png`} // Bayrakları göster
                       alt={lang}
-                      className="w-6 h-4 mr-2 "
+                      className="w-6 h-4 mr-2"
                     />
                     {lang.toUpperCase()}
                   </div>

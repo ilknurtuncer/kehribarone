@@ -1,30 +1,32 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector"; // Dil algılama modülü
-import Backend from "i18next-http-backend"; // HTTP ile dil dosyalarını yüklemek için
+import LanguageDetector from "i18next-browser-languagedetector";
+import Backend from "i18next-http-backend";
 
 i18n
-  .use(LanguageDetector)
-  .use(Backend) // Backend kullanarak dil dosyalarını yüklemek
-  .use(initReactI18next)
+  .use(LanguageDetector) // Tarayıcı dil algılayıcıyı kullan
+  .use(Backend) // HTTP üzerinden çeviri dosyalarını yükle
+  .use(initReactI18next) // React'e entegre et
   .init({
     backend: {
-      loadPath: "/locales/{{lng}}/translation.json", // public klasöründeki yolu 
+      loadPath: "/locales/{{lng}}/translation.json", // Çeviri dosyalarının yolu
     },
-    fallbackLng: "en", //  varsayılan olarak İngilizce
-    debug: true, // Geliştirme sırasında hata ayıklama 
+    fallbackLng: "en", // Varsayılan dil
+    debug: true, // Geliştirme sırasında hata ayıklama için
     interpolation: {
-      escapeValue: false, // React zaten XSS koruması sağlıyor
+      escapeValue: false, // React XSS korumasını sağla
     },
     detection: {
+      // Dil algılama seçenekleri
       order: ["querystring", "localStorage", "cookie", "navigator", "htmlTag"],
-      caches: ["localStorage", "cookie"],
+      caches: ["localStorage", "cookie"], // Algılanan dili saklamak için
     },
-  });
-
-
-// Konsolda dilin yüklendiğini ve geçerli dilin ne olduğunu görmek için
-console.log('Current Language:', i18n.language); // Yüklenen dil
-console.log('Loaded languages:', i18n.languages); // Yüklenen dillerin listesi
+  })
+  .then(() => {
+    console.log("i18n initialized successfully.");
+    console.log("Current Language:", i18n.language); // Yüklenen dil
+    console.log("Loaded languages:", i18n.languages); // Desteklenen dillerin listesi
+  })
+  .catch((err) => console.error("Error initializing i18n:", err));
 
 export default i18n;

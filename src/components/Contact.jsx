@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from 'react-i18next'; // useTranslation ekledik
 
 const contactMethods = [
   {
@@ -67,6 +68,7 @@ const contactMethods = [
 ];
 
 const Contact = () => {
+  const { t } = useTranslation(); // useTranslation hook'u ile t fonksiyonu ekleniyor
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -121,12 +123,10 @@ const Contact = () => {
         <div className="max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none">
           <div className="max-w-lg space-y-3 text-xl font-semibold text-gray-600 mt-12">
             <h3 className="text-teal-500 text-3xl font-semibold sm:text-4xl">
-              Let us know how we can help
+              {t("contact.title")} {/* Bu satırda dil çevirisi ekledik */}
             </h3>
             <p className="text-gray-500 mt-4">
-              We’re here to help and answer any question you might have. We look
-              forward to hearing from you! Please fill out the form, or use the
-              contact information below.
+              {t("contact.subtitle")} {/* Bu satırda dil çevirisi ekledik */}
             </p>
             <div>
               <ul className="mt-6 flex flex-wrap gap-x-10 gap-y-6 items-center">
@@ -142,7 +142,7 @@ const Contact = () => {
           <div className="flex-1 mt-12 sm:max-w-lg lg:max-w-md">
             <form onSubmit={submitForm} className="space-y-5 bg-white p-6 rounded-lg shadow-lg">
               <div>
-                <label className="font-medium text-lg text-gray-700">Full name</label>
+                <label className="font-medium text-lg text-gray-700">{t("contact.form.name")}</label> {/* Dil çevirisi */}
                 <input
                   type="text"
                   name="name"
@@ -153,7 +153,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label className="font-medium text-lg text-gray-700">Email</label>
+                <label className="font-medium text-lg text-gray-700">{t("contact.form.email")}</label> {/* Dil çevirisi */}
                 <input
                   type="email"
                   name="email"
@@ -164,7 +164,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label className="font-medium text-lg text-gray-700">Company</label>
+                <label className="font-medium text-lg text-gray-700">{t("contact.form.company")}</label> {/* Dil çevirisi */}
                 <input
                   type="text"
                   name="company"
@@ -175,7 +175,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label className="font-medium text-lg text-gray-700">Message</label>
+                <label className="font-medium text-lg text-gray-700">{t("contact.form.message")}</label> {/* Dil çevirisi */}
                 <textarea
                   name="message"
                   value={formData.message}
@@ -188,7 +188,7 @@ const Contact = () => {
                 type="submit"
                 className="w-full px-4 py-2 text-white font-medium text-lg bg-teal-500 hover:bg-teal-600 active:bg-teal-500 rounded-lg duration-150"
               >
-                Submit
+                {t("contact.form.submit")} {/* Dil çevirisi */}
               </button>
             </form>
           </div>
