@@ -2,4 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+  /* Swiper Next Button */
+.swiper-button-next, .swiper-button-prev {
+    color: #9ca3af !important; /* Tailwind gray-400 */
+  }
+  
+  /* Hover effect */
+  .swiper-button-next:hover, .swiper-button-prev:hover {
+    color: #4b5563 !important; /* Tailwind gray-600 */
+  }
   
