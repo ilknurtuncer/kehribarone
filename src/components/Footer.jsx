@@ -6,9 +6,20 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-8">
       <div className="container mx-auto px-8">
-       
         <div className="flex flex-col md:flex-row justify-between items-center">
-          
+          {/* Logo Alanı */}
+          <div className="ml-10 mb-4 md:mb-0 flex flex-col items-center">
+            <img 
+              src="/images/logo/logo1.png" 
+              alt="Logo" 
+              className=" w-40 h-40 mr-2 " 
+            />
+            <span className=" text-xl font-bold  text-red-300 mt-3">
+              Aureus
+            </span>
+          </div>
+
+          {/* Quick Links */}
           <div className="mb-4 md:mb-0">
             <h2 className="text-lg text-red-300 font-bold mb-2">Quick Links</h2>
             <ul className="space-y-2">
@@ -35,10 +46,10 @@ const Footer = () => {
             </ul>
           </div>
 
-          
+          {/* Social Media */}
           <div>
-            <h2 className="text-lg text-red-300 font-bold mb-2">Follow Us</h2>
-            <div className="flex space-x-4">
+            <h2 className="text-lg text-red-300 font-bold mb-24">Follow Us</h2>
+            <div className="flex space-x-6">
               <a
                 href="https://facebook.com"
                 target="_blank"
@@ -67,7 +78,7 @@ const Footer = () => {
           </div>
         </div>
 
-         
+        {/* Footer Bottom */}
         <div className="text-center mt-6">
           <p className="text-sm text-gray-400">
             © 2024 Aureus. All rights reserved.
