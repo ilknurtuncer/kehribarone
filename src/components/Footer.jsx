@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Logo Alanı */}
-          <div className="ml-10 mb-4 md:mb-0 flex flex-col items-center">
+          <div className="ml-10 mb-4 md:mb-0 flex flex-col items-center p-3">
             <img 
               src="/images/logo/logo1.png" 
               alt="Logo" 
@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="mb-4 md:mb-0 text-center md:text-left">
+          <div className="mt-0 md:mb-0 text-center md:text-left">
             <h2 className="text-lg text-orange-400 font-bold mb-2">Quick Links</h2>
             <ul className="space-y-2">
               <li>
