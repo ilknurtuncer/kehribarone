@@ -22,7 +22,7 @@ function ProductDetail() {
   const productPrice = product.price[i18n.language];
 
   return (
-    <div className="p-4 flex flex-col md:flex-row gap-8">
+    <div className="p-4 flex flex-col md:flex-row gap-8 bg-amber-50">
       <img
         src={`/images/products/${product.image}`}
         alt={productName}

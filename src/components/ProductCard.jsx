@@ -11,7 +11,7 @@ const ProductCard = ({ product }) => {
   const productPrice = product.price[i18n.language];
 
   return (
-    <div className="border border-inherit border-orange-200 rounded shadow-md p-8 m-8">
+    <div className="border-inherit bg-amber-300  rounded shadow-md p-8 m-8">
       <img
         src={`/images/products/${product.image}`}
         alt={productName}

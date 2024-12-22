@@ -58,7 +58,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-orange-300 bg-opacity-70 shadow-md fixed w-full z-20 transition-all duration-300 ${
+      className={`bg-amber-200 bg-opacity-70 shadow-md fixed w-full z-20 transition-all duration-300 ${
         isSticky ? "top-0" : "top-0"
       }`}
     >
@@ -69,25 +69,26 @@ const Navbar = () => {
           </Link>
 
           <div className="hidden md:flex space-x-8">
-            <Link to="/" className="text-gray-700 text-xl hover:text-blue-500">
+            <Link to="/" className="text-gray-700 text-xl  hover:text-amber-500">
               {t("navbar.home")}
             </Link>
             <div className="relative" ref={dropdownRefs.products}>
   <button
     onClick={() => toggleDropdown("products")}
-    className="text-gray-700 text-xl hover:text-blue-500"
+    className="text-gray-700 text-xl hover:text-amber-500"
   >
     {t("navbar.products")}
   </button>
   {dropdownState.products && (
-    <div className="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg">
+    <div className="absolute left-0 mt-4 w-48 bg-amber-100 bg-opacity-85 rounded shadow-lg">
       {productData.map((product) => (
         <Link
           key={product.id}
           to={`/products/${product.id}`}
-          className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          className="block px-4 py-2 text-gray-700 hover:bg-orange-300"
         >
-          {product.name[i18n.language] || product.name.en} //* seçilen dile göre ürün adı
+          {/**ürün adlarını getir */}
+          {product.name[i18n.language] || product.name.en} 
         </Link>
       ))}
     </div>
@@ -96,13 +97,13 @@ const Navbar = () => {
 
             <Link
               to="/about"
-              className="text-gray-700 text-xl hover:text-blue-500"
+              className="text-gray-700 text-xl hover:text-amber-500"
             >
               {t("navbar.about")}
             </Link>
             <Link
               to="/contact"
-              className="text-gray-700 text-xl hover:text-blue-500"
+              className="text-gray-700 text-xl hover:text-amber-500"
             >
               {t("navbar.contact")}
             </Link>
@@ -114,7 +115,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-6">
             <a
               href="tel:+123456789"
-              className="text-gray-700 text-lg font-semibold hover:text-blue-600 flex items-center"
+              className="text-gray-700 text-lg font-semibold hover:text-amber-500 flex items-center"
             >
               <FontAwesomeIcon icon={faPhone} className="mr-2" /> +123 456 789
             </a>
@@ -122,7 +123,7 @@ const Navbar = () => {
               href="https://www.google.com/maps?q=Your+Address"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-700 text-lg font-semibold hover:text-blue-600 flex items-center"
+              className="text-gray-700 text-lg font-semibold hover:text-amber-500 flex items-center"
             >
               <FontAwesomeIcon icon={faLocationDot} className="mr-2" /> Your Address
             </a>
@@ -132,7 +133,7 @@ const Navbar = () => {
           <div className="relative">
             <button
               onClick={() => toggleDropdown("language")}
-              className="text-gray-700 text-xl hover:text-blue-500 flex items-center"
+              className="text-gray-700 text-xl hover:text-amber-500 flex items-center"
             >
               <img
                 src={`/images/flags/${i18n.language}.png`} // Dilin bayrağını yükle
@@ -142,11 +143,11 @@ const Navbar = () => {
               {i18n.language.toUpperCase()}
             </button>
             {dropdownState.language && (
-              <div className="absolute right-0 mt-2 w-48 bg-white border rounded shadow-lg">
+              <div className="absolute right-0 mt-4 w-48 bg-amber-100 bg-opacity-85 rounded shadow-lg">
                 {["en", "de", "pl"].map((lang) => (
                   <div
                     key={lang}
-                    className="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200"
+                    className="flex items-center px-4 py-2 cursor-pointer hover:bg-orange-300"
                     onClick={() => switchLanguage(lang)}
                   >
                     <img

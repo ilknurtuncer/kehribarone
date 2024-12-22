@@ -53,21 +53,37 @@ const Contact = () => {
   return (
     <main className="py-14 bg-gray-100">
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8 flex flex-col lg:flex-row">
-        {/* Sol taraf: Harita ve Başlık */}
-        <div className="lg:w-1/3 flex flex-col space-y-4">
-          <h3 className="text-teal-500 text-3xl font-semibold sm:text-4xl">
-            {t("contact.address")}
-          </h3>
-          <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
+        {/* Sol taraf: İletişim ve Harita */}
+        <div className="lg:w-1/3 flex flex-col space-y-6">
+          {/* İletişim Başlığı ve Telefon */}
+          <div>
+            <h3 className="text-teal-500 text-3xl font-semibold sm:text-4xl">
+              {t("contact.communication")}
+            </h3>
+            <p className="mt-2 text-gray-700 text-xl">
+              <a href="tel:+905555555555" className="text-orange-600 hover:underline">
+                {t("contact.phone")}: +90 555 555 55 55
+              </a>
+            </p>
+          </div>
+
+          {/* Harita */}
+          <div>
+            <h3 className="text-teal-500 text-3xl font-semibold sm:text-4xl">
+              {t("contact.address")}
+            </h3>
+            <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
             <iframe
-              title="Google Maps"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509616!2d-122.42067948467774!3d37.77492977975817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6b5ed4a5%3A0x4e84d8f1e6e8dc2b!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2str!4v1602105413461!5m2!1sen!2str"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-            ></iframe>
+  title="Google Maps"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.9608184231225!2d13.404954315957982!3d52.520006179813396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c9ea9ea7c3%3A0x7f0e0e67f75e8d5d!2sBerlin%2C%20Germany!5e0!3m2!1sen!2str!4v1602105413461!5m2!1sen!2str"
+  width="100%"
+  height="100%"
+  style={{ border: 0 }}
+  allowFullScreen=""
+  loading="lazy"
+></iframe>
+
+            </div>
           </div>
         </div>
 

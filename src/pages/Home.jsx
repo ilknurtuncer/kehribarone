@@ -5,7 +5,7 @@ import AboutKehribar from '../components/hakkımızda/AboutKehribar';
 
 const Home = () => {
   return (
-    <div className="relative bg-orange-100 mt-0 ">
+    <div className="relative bg-amber-100 mt-0 ">
       <Carousel />
       <ProductList />
       <AboutKehribar/>
