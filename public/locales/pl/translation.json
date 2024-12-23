@@ -26,15 +26,19 @@
     "copyright": "Wszystkie prawa zastrzeżone."
   },
   "contact": {
-    "title": "Powiedz nam, jak możemy pomóc",
-    "subtitle": "Jesteśmy tutaj, aby pomóc i odpowiedzieć na każde pytanie. Czekamy na Twoją wiadomość! Wypełnij formularz lub skorzystaj z poniższych danych kontaktowych.",
+    "communication": "Komunikacja",
+    "phone": "Telefon",
+    "address": "Adres",  // Bu satırı ekleyin
+    "title": "Kontakt",
+    "subtitle": "Proszę wypełnić formularz kontaktowy.",
     "form": {
-      "name": "Pełne imię i nazwisko",
+      "name": "Imię",
       "email": "E-mail",
       "company": "Firma",
       "message": "Wiadomość",
       "submit": "Wyślij"
     }
+  }
   },
   "about": {
     "title": "O bursztynie",

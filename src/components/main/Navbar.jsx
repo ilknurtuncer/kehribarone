@@ -51,7 +51,7 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("click", handleClickOutside);
     };
-  }, [handleClickOutside]); // handleClickOutside bağımlılık olarak eklendi.
+  }, [handleClickOutside]); 
 
   const switchLanguage = (lang) => {
     i18n.changeLanguage(lang);

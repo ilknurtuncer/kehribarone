@@ -14,6 +14,7 @@ const Contact = () => {
 
   const submitForm = async (e) => {
     e.preventDefault();
+    console.log("Form gönderildi: ", formData); // Verilerin doğru olduğundan emin olun
     try {
       const response = await fetch(
         "https://nodeijs-mailler01-3hsx.vercel.app/sendmail",
@@ -27,14 +28,15 @@ const Contact = () => {
       );
       if (response.ok) {
         const result = await response.json();
-        console.log(result);
-        navigate("/contact-success");
+        console.log("Mesaj gönderildi:", result);
+        navigate("/contact-success"); // Yönlendirme
       } else {
-        console.error("Form data submission failed");
+        console.error("Form submission failed");
       }
     } catch (error) {
       console.error("Error:", error.message);
     }
+    // Formu sıfırlamak
     setFormData({
       name: "",
       email: "",
@@ -73,16 +75,15 @@ const Contact = () => {
               {t("contact.address")}
             </h3>
             <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
-            <iframe
-  title="Google Maps"
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.9608184231225!2d13.404954315957982!3d52.520006179813396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c9ea9ea7c3%3A0x7f0e0e67f75e8d5d!2sBerlin%2C%20Germany!5e0!3m2!1sen!2str!4v1602105413461!5m2!1sen!2str"
-  width="100%"
-  height="100%"
-  style={{ border: 0 }}
-  allowFullScreen=""
-  loading="lazy"
-></iframe>
-
+              <iframe
+                title="Google Maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.9608184231225!2d13.404954315957982!3d52.520006179813396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c9ea9ea7c3%3A0x7f0e0e67f75e8d5d!2sBerlin%2C%20Germany!5e0!3m2!1sen!2str!4v1602105413461!5m2!1sen!2str"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+              ></iframe>
             </div>
           </div>
         </div>
