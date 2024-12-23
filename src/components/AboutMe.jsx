@@ -1,7 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons"; // 'faGlobe' solid ikonlardan import edildi
+import { faGlobe } from "@fortawesome/free-solid-svg-icons"; 
+
+
 
 const AboutMe = () => {
   return (
@@ -100,6 +102,7 @@ const AboutMe = () => {
             </a>
           </li>
         </ul>
+        
       </div>
     </div>
   );
