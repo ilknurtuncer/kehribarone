@@ -1,6 +1,6 @@
 import React from "react";
 import ProductCard from "./ProductCard";
-import productData from "../data/productData";
+import productData from "../../data/productData";
 import { useTranslation } from "react-i18next"; // useTranslation hook'u ile çeviri alıyoruz
 
 const ProductList = () => {

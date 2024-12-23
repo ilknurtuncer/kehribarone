@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import productData from "../data/productData";
+import productData from "../../data/productData";
 
 function ProductDetail() {
   const { id } = useParams();

@@ -1,16 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/header/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./components/main/Navbar";
+import Footer from "./components/main/Footer";
 import Home from "./pages/Home";
-import ProductDetail from "./components/ProductDetail";
-import About from "./components/About";
-import Contact from "./components/Contact";
+import ProductDetail from "./components/main/ProductDetail";
+import About from "./components/hakkımızda/About";
+import Contact from "./components/main/Contact";
 import Kolye from "./components/products/Kolye";
 import Bileklik from "./components/products/Bileklik";
 import Tesbih from "./components/products/Tesbih";
 import { LanguageProvider } from './context/LanguageContext'; 
-import AboutMe from "./components/AboutMe";
+import AboutMe from "./components/hakkımızda/AboutMe";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';  // WhatsApp ikonu ekledik
 

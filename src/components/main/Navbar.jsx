@@ -1,12 +1,12 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next"; // useTranslation import edildi
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // FontAwesomeIcon import edildi
-import { faPhone, faLocationDot } from "@fortawesome/free-solid-svg-icons"; // Gerekli ikonlar import edildi
+import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
+import { faPhone, faLocationDot } from "@fortawesome/free-solid-svg-icons"; 
 import productData from "../../data/productData";
 
 const Navbar = () => {
-  const { t, i18n } = useTranslation(); // useTranslation ile t ve i18n alındı
+  const { t, i18n } = useTranslation();
   const [dropdownState, setDropdownState] = useState({
     products: false,
     language: false,
@@ -29,7 +29,8 @@ const Navbar = () => {
     setIsSticky(window.scrollY > 0);
   };
 
-  const handleClickOutside = (event) => {
+  // handleClickOutside fonksiyonunu useCallback ile tanımlıyoruz.
+  const handleClickOutside = useCallback((event) => {
     Object.keys(dropdownRefs).forEach((key) => {
       if (
         dropdownRefs[key].current &&
@@ -41,7 +42,7 @@ const Navbar = () => {
         }));
       }
     });
-  };
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -50,10 +51,10 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("click", handleClickOutside);
     };
-  }, []);
+  }, [handleClickOutside]); // handleClickOutside bağımlılık olarak eklendi.
 
   const switchLanguage = (lang) => {
-    i18n.changeLanguage(lang); // Dil değişimi
+    i18n.changeLanguage(lang);
   };
 
   return (
@@ -73,27 +74,26 @@ const Navbar = () => {
               {t("navbar.home")}
             </Link>
             <div className="relative" ref={dropdownRefs.products}>
-  <button
-    onClick={() => toggleDropdown("products")}
-    className="text-gray-700 text-xl hover:text-amber-500"
-  >
-    {t("navbar.products")}
-  </button>
-  {dropdownState.products && (
-    <div className="absolute left-0 mt-4 w-48 bg-amber-100 bg-opacity-85 rounded shadow-lg">
-      {productData.map((product) => (
-        <Link
-          key={product.id}
-          to={`/products/${product.id}`}
-          className="block px-4 py-2 text-gray-700 hover:bg-orange-300"
-        >
-          {/**ürün adlarını getir */}
-          {product.name[i18n.language] || product.name.en} 
-        </Link>
-      ))}
-    </div>
-  )}
-</div>
+              <button
+                onClick={() => toggleDropdown("products")}
+                className="text-gray-700 text-xl hover:text-amber-500"
+              >
+                {t("navbar.products")}
+              </button>
+              {dropdownState.products && (
+                <div className="absolute left-0 mt-4 w-48 bg-amber-100 bg-opacity-85 rounded shadow-lg">
+                  {productData.map((product) => (
+                    <Link
+                      key={product.id}
+                      to={`/products/${product.id}`}
+                      className="block px-4 py-2 text-gray-700 hover:bg-orange-300"
+                    >
+                      {product.name[i18n.language] || product.name.en}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
 
             <Link
               to="/about"
@@ -111,7 +111,6 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center space-x-6">
-          {/* Telefon ve Adres */}
           <div className="flex items-center space-x-6">
             <a
               href="tel:+123456789"
@@ -129,14 +128,13 @@ const Navbar = () => {
             </a>
           </div>
 
-          {/* Dil Seçeneği */}
           <div className="relative">
             <button
               onClick={() => toggleDropdown("language")}
               className="text-gray-700 text-xl hover:text-amber-500 flex items-center"
             >
               <img
-                src={`/images/flags/${i18n.language}.png`} // Dilin bayrağını yükle
+                src={`/images/flags/${i18n.language}.png`}
                 alt={i18n.language}
                 className="w-6 h-4 mr-2"
               />
@@ -151,7 +149,7 @@ const Navbar = () => {
                     onClick={() => switchLanguage(lang)}
                   >
                     <img
-                      src={`/images/flags/${lang}.png`} // Bayrakları göster
+                      src={`/images/flags/${lang}.png`}
                       alt={lang}
                       className="w-6 h-4 mr-2"
                     />
