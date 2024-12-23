@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className="container bg-amber-50 min-h-screen mx-auto p-8">
+    <div className="container min-h-screen mx-auto p-8">
       <h1 className="text-4xl p-2 font-bold mb-4">How I Built This Project</h1>
       
       <p className="text-2xl p-2 font-bold text-gray-700">
@@ -49,6 +49,52 @@ const AboutMe = () => {
       <p className="text-lg text-gray-700 mt-4">
         I hope you find this project informative and enjoyable. If you'd like to know more about the development process or have any questions, feel free to reach out!
       </p>
+
+      <h2 className="text-2xl font-semibold text-gray-800 mt-6 mb-4">Acknowledgements</h2>
+      
+      <p className="text-lg text-gray-700">
+        This project was built under the mentorship of Yusuf Küçükçopur, with valuable advice and suggestions from Fatih Sarıkaya.
+      </p>
+
+      <h2 className="text-2xl font-semibold text-gray-800 mt-6 mb-4">Find Me Online</h2>
+      
+      <div className="space-y-3 text-lg text-gray-700">
+        <p>
+          You can check out more of my work and connect with me on the following platforms:
+        </p>
+        <ul className="list-none">
+          <li>
+            <a 
+              href="https://github.com/your-username" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-orange-400"
+            >
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a 
+              href="https://www.linkedin.com/in/your-linkedin-profile/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-orange-400"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a 
+              href="https://your-portfolio-link.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-orange-400"
+            >
+              Portfolio
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
