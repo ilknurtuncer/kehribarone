@@ -1,8 +1,11 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons"; // 'faGlobe' solid ikonlardan import edildi
 
 const AboutMe = () => {
   return (
-    <div className="container min-h-screen mx-auto p-8">
+    <div className="container bg-amber-50 min-h-screen mx-auto p-8">
       <h1 className="text-4xl p-2 font-bold mb-4">How I Built This Project</h1>
       
       <p className="text-2xl p-2 font-bold text-gray-700">
@@ -62,25 +65,27 @@ const AboutMe = () => {
         <p>
           You can check out more of my work and connect with me on the following platforms:
         </p>
-        <ul className="list-none">
+        <ul className="list-none flex space-x-8  bottom-8 right-8">
           <li>
             <a 
-              href="https://github.com/your-username" 
+              href="https://github.com/ilknurtuncer" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="hover:text-orange-400"
+              className="flex items-center space-x-2 hover:text-orange-400"
             >
-              GitHub
+              <FontAwesomeIcon icon={faGithub} size="lg" className="text-gray-700" />
+              <span>GitHub</span>
             </a>
           </li>
           <li>
             <a 
-              href="https://www.linkedin.com/in/your-linkedin-profile/" 
+              href="https://www.linkedin.com/in/%C4%B1lknurtuncer/" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="hover:text-orange-400"
+              className="flex items-center space-x-2 hover:text-orange-400"
             >
-              LinkedIn
+              <FontAwesomeIcon icon={faLinkedin} size="lg" className="text-gray-700" />
+              <span>LinkedIn</span>
             </a>
           </li>
           <li>
@@ -88,9 +93,10 @@ const AboutMe = () => {
               href="https://your-portfolio-link.com" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="hover:text-orange-400"
+              className="flex items-center space-x-2 hover:text-orange-400"
             >
-              Portfolio
+              <FontAwesomeIcon icon={faGlobe} size="lg" className="text-gray-700" />
+              <span>Portfolio</span>
             </a>
           </li>
         </ul>
