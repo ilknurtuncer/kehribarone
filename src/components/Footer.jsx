@@ -81,7 +81,13 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="text-center mt-6">
           <p className="text-sm text-orange-200">
-            © 2024 Aureus. All rights reserved.
+            © 2024 Aureus. All rights reserved. | 
+            <a
+              href="/about-me" // Yönlendireceğiniz sayfa
+              className="text-orange-400 hover:text-orange-200"
+            >
+              Ilknur Tuncer
+            </a>
           </p>
         </div>
       </div>

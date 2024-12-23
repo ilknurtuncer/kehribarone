@@ -9,7 +9,8 @@ import Contact from "./components/Contact";
 import Kolye from "./components/products/Kolye";
 import Bileklik from "./components/products/Bileklik";
 import Tesbih from "./components/products/Tesbih";
-import { LanguageProvider } from './context/LanguageContext'; // LanguageProvider'ı burada sarmalıyoruz
+import { LanguageProvider } from './context/LanguageContext'; 
+import AboutMe from "./components/AboutMe";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="/bileklik" element={<Bileklik />} />
             <Route path="/kolye" element={<Kolye />} />
             <Route path="/tesbih" element={<Tesbih />} />
+            <Route path="/about-me" element={<AboutMe/>} />
           </Routes>
         </div>
         <Footer />
