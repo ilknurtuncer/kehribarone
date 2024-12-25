@@ -42,7 +42,8 @@ const Navbar = () => {
         }));
       }
     });
-  }, []);
+  }, [dropdownRefs]); // Burada bağımlılık dizisine "dropdownRefs" eklendi.
+  
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);

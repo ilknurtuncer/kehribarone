@@ -14,7 +14,7 @@ const Contact = () => {
 
   const submitForm = async (e) => {
     e.preventDefault();
-    console.log("Form gönderildi: ", formData); // Verilerin doğru olduğundan emin olun
+    console.log("Form gönderildi: ", formData); 
     try {
       const response = await fetch(
         "https://nodeijs-mailler01-3hsx.vercel.app/sendmail",
