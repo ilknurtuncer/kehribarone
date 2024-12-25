@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## Project Ownership
+
+This project is developed and maintained by [ilknura](https://github.com/ilknura).
+
+You can view the live demo of the project here: [Netlify Live Demo](https://kehribarone.netlify.app)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
