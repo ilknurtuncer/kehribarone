@@ -1,11 +1,10 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa"; // Using react-icons for check icon
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next"; // Import useTranslation hook for translations
 
 const AboutKehribar = () => {
   const { t } = useTranslation(); // useTranslation hook to get translations
-  const navigate = useNavigate();
 
   const handleYoutubeClick = () => {
     // Redirect to YouTube
