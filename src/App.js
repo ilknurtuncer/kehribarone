@@ -12,7 +12,7 @@ import Tesbih from "./components/products/Tesbih";
 import { LanguageProvider } from './context/LanguageContext'; 
 import AboutMe from "./components/hakkımızda/AboutMe";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';  // WhatsApp ikonu ekledik
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';  
 
 const App = () => {
   return (
