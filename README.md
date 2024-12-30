@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This project is developed and maintained by [ilknura](https://github.com/ilknura).
 
-You can view the live demo of the project here: [Netlify Live Demo]( https://kehribaroneilktncr.netlify.app)
+You can view the live demo of the project here: [Netlify Live Demo](https://kehribaroneilktncr.netlify.app)
 
 ## Available Scripts
 
