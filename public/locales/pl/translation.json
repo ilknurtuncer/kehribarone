@@ -28,7 +28,7 @@
   "contact": {
     "communication": "Komunikacja",
     "phone": "Telefon",
-    "address": "Adres",  // Bu satırı ekleyin
+    "address": "Adres",  
     "title": "Kontakt",
     "subtitle": "Proszę wypełnić formularz kontaktowy.",
     "form": {
@@ -38,7 +38,7 @@
       "message": "Wiadomość",
       "submit": "Wyślij"
     }
-  }
+  
   },
   "about": {
     "title": "O bursztynie",
