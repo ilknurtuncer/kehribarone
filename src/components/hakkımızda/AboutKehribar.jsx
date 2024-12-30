@@ -1,16 +1,16 @@
 import React from "react";
-import { FaCheckCircle } from "react-icons/fa"; // Using react-icons for check icon
+import { FaCheckCircle } from "react-icons/fa"; 
 // import { useNavigate } from "react-router-dom";
-import { useTranslation } from "react-i18next"; // Import useTranslation hook for translations
+import { useTranslation } from "react-i18next"; 
 
 const AboutKehribar = () => {
-  const { t } = useTranslation(); // useTranslation hook to get translations
+  const { t } = useTranslation(); 
 
   const handleYoutubeClick = () => {
     // Redirect to YouTube
     window.open("https://www.youtube.com/results?search_query=amber+benefits", "_blank");
 
-    // navigate("/some-path"); // navigate i kullanmak istediğimde yönlendirilmek istenen yol
+    
 
   };
 
@@ -19,8 +19,8 @@ const AboutKehribar = () => {
       {/* Left side - Amber image and YouTube button */}
       <div className="relative w-full md:w-1/2">
         <img
-          src="/images/carousel/amber4.jpg" // Get amber image from the public folder
-          alt={t("aboutAmber.imageAlt")} // Use translation for alt text
+          src="/images/carousel/amber4.jpg" 
+          alt={t("aboutAmber.imageAlt")} 
           className="w-full h-auto rounded-lg shadow-md"
         />
         {/* YouTube button */}
@@ -36,10 +36,10 @@ const AboutKehribar = () => {
         </button>
       </div>
        {/* //*------------------------------------------------------------------
-      <button onClick={handleButtonClick}>Go to Some Path</button> //* navigate i kullanmak istediğimde kullanılacak
+     
        //*--------------------------------- */}
 
-      {/* Right side - About heading and amber's benefits */}
+      {/* Right side */}
       <div className="w-full md:w-1/2 text-center md:text-left">
         <h2 className="text-3xl font-bold text-yellow-900 mb-4">{t("aboutAmber.title")}</h2> {/* Translated title */}
         <p className="text-lg text-gray-700 mb-6">

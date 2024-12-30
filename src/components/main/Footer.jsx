@@ -83,7 +83,7 @@ const Footer = () => {
           <p className="text-sm text-orange-200">
             © 2024 Aureus. All rights reserved. | 
             <a
-              href="/about-me" // Yönlendireceğiniz sayfa
+              href="/about-me" 
               className="text-orange-400 hover:text-orange-200"
             >
               Ilknur Tuncer

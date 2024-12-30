@@ -43,7 +43,7 @@ const Navbar = () => {
         }));
       }
     });
-  }, [dropdownRefs]); // Burada bağımlılık dizisine "dropdownRefs" eklendi.
+  }, [dropdownRefs]); //"dropdownRefs" eklendi.
   
 
   useEffect(() => {

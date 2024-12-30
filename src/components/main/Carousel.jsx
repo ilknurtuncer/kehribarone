@@ -12,7 +12,7 @@ const Carousel = () => {
     {
       id: 1,
       image: "/images/carousel/amber1.jpg",
-      title: t("carousel.title1"), // Çeviriler burada alınır
+      title: t("carousel.title1"), 
       subtitle: t("carousel.subtitle1"),
     },
     {

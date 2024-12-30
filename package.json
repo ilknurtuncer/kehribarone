@@ -10,6 +10,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "cross-env": "^7.0.3",
     "emailjs-com": "^3.2.0",
     "flowbite": "^2.5.2",
     "i18next": "^24.0.5",
@@ -28,7 +29,7 @@
     "build": "react-scripts build",
     "start": "react-scripts start",
     "test": "react-scripts test",
-    "prebuild": "CI=false && npm run build"
+   "prebuild": "CI=false && react-scripts build"
   },
   "eslintConfig": {
     "extends": [

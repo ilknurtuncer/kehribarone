@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 const ProductCard = ({ product }) => {
   const { t, i18n } = useTranslation(); // Çevirileri almak için hook
 
-  // Seçilen dile göre ürün verilerini alıyoruz
+  // Seçilen dile göre ürün verileri
   const productName = product.name[i18n.language];
   const productDescription = product.description[i18n.language];
   const productPrice = product.price[i18n.language];
