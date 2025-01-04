@@ -30,7 +30,7 @@ const Navbar = () => {
     setIsSticky(window.scrollY > 0);
   };
 
-  // handleClickOutside fonksiyonunu useCallback ile tanımlıyoruz.
+  // handleClickOutside fonksiyonunu useCallback ile tanımladık
   const handleClickOutside = useCallback((event) => {
     Object.keys(dropdownRefs).forEach((key) => {
       if (
@@ -43,7 +43,7 @@ const Navbar = () => {
         }));
       }
     });
-  }, [dropdownRefs]); //"dropdownRefs" eklendi.
+  }, [dropdownRefs]); //"dropdownRefs" 
   
 
   useEffect(() => {

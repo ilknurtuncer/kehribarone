@@ -4,8 +4,8 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import Backend from "i18next-http-backend";
 
 i18n
-  .use(LanguageDetector) // Tarayıcı dil algılayıcıyı kullan
-  .use(Backend) // HTTP üzerinden çeviri dosyalarını yükle
+  .use(LanguageDetector) // Tarayıcı dil algılayıcı
+  .use(Backend) // HTTP üzerinden çeviri dosyaları
   .use(initReactI18next) // React'e entegre et
   .init({
     backend: {

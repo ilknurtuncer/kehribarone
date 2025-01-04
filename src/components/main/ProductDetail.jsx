@@ -16,7 +16,7 @@ function ProductDetail() {
     );
   }
 
-  // Seçilen dile göre ürün verilerini alıyoruz
+  // Seçilen dile göre ürün verileri
   const productName = product.name[i18n.language];
   const productDescription = product.description[i18n.language];
   const productPrice = product.price[i18n.language];

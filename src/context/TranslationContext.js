@@ -6,7 +6,7 @@ export const TranslationProvider = ({ children }) => {
   const [language, setLanguage] = useState('en');
 
   const t = (key) => {
-    // Burada çeviri mantığınızı yazın
+    // çeviri 
     const translations = {
       en: { hello: 'Hello' },
       de: { hello: 'Hallo' },

@@ -1,7 +1,7 @@
 import React from "react";
 import ProductCard from "./ProductCard";
 import productData from "../../data/productData";
-import { useTranslation } from "react-i18next"; // useTranslation hook'u ile çeviri alıyoruz
+import { useTranslation } from "react-i18next"; // useTranslation hook'u ile çeviri 
 
 const ProductList = () => {
   const { t } = useTranslation(); // Çeviri hook'u

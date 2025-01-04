@@ -1,4 +1,4 @@
-// productData.js
+
 const productData = [
   {
     id: 1,
@@ -96,7 +96,7 @@ const productData = [
     }
   }
   
-  // Diğer ürünler...
+  
 ];
 
 export default productData;

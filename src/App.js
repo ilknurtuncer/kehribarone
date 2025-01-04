@@ -33,7 +33,7 @@ const App = () => {
         </div>
         <Footer />
 
-        {/* WhatsApp ikonu sabit ve sağ alt köşede */}
+        {/* WhatsApp ikonu */}
         <a
           href="https://wa.me/1234567890"  // WhatsApp 
           target="_blank"
