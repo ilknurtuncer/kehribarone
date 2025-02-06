@@ -10,7 +10,7 @@ function ProductDetail() {
 
   if (!product) {
     return (
-      <div className="p-4 text-center text-red-500">
+      <div className="p-4 text-center text-red-500 text-lg sm:text-xl">
         {t("productDetail.notFound")}
       </div>
     );
@@ -27,13 +27,13 @@ function ProductDetail() {
         <img
           src={`/images/products/${product.image}`}
           alt={productName}
-          className="object-contain w-full max-w-lg rounded-lg shadow-2xl"
+          className="object-contain w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg rounded-lg shadow-2xl"
         />
       </div>
-      <div className="w-full md:w-1/2">
-        <h1 className="text-2xl font-bold mb-4">{productName}</h1>
-        <p className="text-gray-700 mb-2">{productDescription}</p>
-        <p className="font-bold text-lg text-yellow-600">{productPrice}</p>
+      <div className="w-full md:w-1/2 text-center md:text-left">
+        <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">{productName}</h1>
+        <p className="text-gray-700 text-sm sm:text-base md:text-lg mb-2">{productDescription}</p>
+        <p className="font-bold text-lg sm:text-xl md:text-2xl text-yellow-600">{productPrice}</p>
       </div>
     </div>
   );
