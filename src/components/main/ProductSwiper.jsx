@@ -12,7 +12,7 @@ const ProductSwiper = () => {
   return (
     <div className="bg-amber-100 container mx-auto py-8 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32">
       <h2 className="text-center text-xl sm:text-2xl font-bold mb-6">
-        {t("productSwiper.title")}
+        {t("Products.title")} {/* Dil değiştirmeye duyarlı başlık */}
       </h2>
       <Swiper
         navigation={{
@@ -33,14 +33,14 @@ const ProductSwiper = () => {
           <SwiperSlide key={product.id} className="flex flex-col items-center">
             <img
               src={`/images/products/${product.image}`}
-              alt={product.name[i18n.language]}
+              alt={product.name[i18n.language]} // Dil değiştirmeye duyarlı
               className="rounded-lg w-40 sm:w-48 md:w-52 lg:w-56 xl:w-60 h-40 sm:h-48 md:h-52 lg:h-56 xl:h-60 object-cover mb-2"
             />
             <h3 className="text-base sm:text-lg font-semibold">
-              {product.name[i18n.language]}
+              {product.name[i18n.language]} {/* Dil değiştirmeye duyarlı */}
             </h3>
             <p className="text-yellow-600 font-bold text-sm sm:text-base">
-              {product.price[i18n.language]}
+              {product.price[i18n.language]} {/* Dil değiştirmeye duyarlı */}
             </p>
           </SwiperSlide>
         ))}

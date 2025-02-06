@@ -80,5 +80,10 @@
     "benefit3": "Strengthens the immune system.",
     "benefit4": "Can be used as a natural pain reliever.",
     "benefit5": "Improves skin health."
+  },
+ 
+    "Products":  {
+     "title": "Products"
   }
+  
 }
