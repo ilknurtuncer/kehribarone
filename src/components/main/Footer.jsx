@@ -8,71 +8,66 @@ const Footer = () => {
       <div className="container mx-auto px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Logo Alanı */}
-          <div className="ml-10 mb-4 md:mb-0 flex flex-col items-center p-3">
+          <div className="mb-6 md:mb-0 flex flex-col items-center p-3">
             <img 
               src="/images/logo/logo1.png" 
               alt="Logo" 
-              className="w-40 h-40 mr-2" 
+              className="w-32 h-32 md:w-40 md:h-40" 
             />
-            <span className="text-3xl font-bold text-orange-400 mt-3">
+            <span className="text-2xl md:text-3xl font-bold text-orange-400 mt-3">
               Aureus
             </span>
           </div>
 
           {/* Quick Links */}
-          <div className="mt-0 md:mb-0 text-center md:text-left">
+          <div className="mb-6 md:mb-0 text-center md:text-left">
             <h2 className="text-lg text-orange-400 font-bold mb-2">Quick Links</h2>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="hover:text-orange-200">
-                  Home
-                </a>
+                <a href="/" className="hover:text-orange-200">Home</a>
               </li>
               <li>
-                <a href="/products" className="hover:text-orange-200">
-                  Products
-                </a>
+                <a href="/products" className="hover:text-orange-200">Products</a>
               </li>
               <li>
-                <a href="/about" className="hover:text-orange-200">
-                  About
-                </a>
+                <a href="/about" className="hover:text-orange-200">About</a>
               </li>
               <li>
-                <a href="/contact" className="hover:text-orange-200">
-                  Contact
-                </a>
+                <a href="/contact" className="hover:text-orange-200">Contact</a>
               </li>
             </ul>
           </div>
 
           {/* Social Media */}
-          <div className="text-center md:text-left mr-20">
+          <div className="text-center md:text-left">
             <h2 className="text-lg text-orange-400 font-bold mb-5">Follow Us</h2>
-            <div className="space-y-4">
+            <div className="flex flex-col space-y-4">
               <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-orange-200 block"
+                className="hover:text-orange-200 flex items-center space-x-2"
               >
-                <FontAwesomeIcon icon={faFacebookF} size="lg" /> Facebook
+                <FontAwesomeIcon icon={faFacebookF} size="lg" />
+                <span>Facebook</span>
               </a>
               <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-orange-200 block"
+                className="hover:text-orange-200 flex items-center space-x-2"
               >
-                <FontAwesomeIcon icon={faInstagram} size="lg" /> Instagram
+                <FontAwesomeIcon icon={faInstagram} size="lg" />
+                <span>Instagram</span>
               </a>
               <a
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-orange-200 block"
+                className="hover:text-orange-200 flex items-center space-x-2"
               >
-                <FontAwesomeIcon icon={faTwitter} size="lg" /> Twitter
+                <FontAwesomeIcon icon={faTwitter} size="lg" />
+                <span>Twitter</span>
               </a>
             </div>
           </div>
@@ -82,10 +77,7 @@ const Footer = () => {
         <div className="text-center mt-6">
           <p className="text-sm text-orange-200">
             © 2024 Aureus. All rights reserved. | 
-            <a
-              href="/about-me" 
-              className="text-orange-400 hover:text-orange-200"
-            >
+            <a href="/about-me" className="text-orange-400 hover:text-orange-200">
               Ilknur Tuncer
             </a>
           </p>
